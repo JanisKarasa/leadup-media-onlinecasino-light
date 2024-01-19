@@ -1,0 +1,63 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.h2,
+h2 {
+  font-size: calc(1.325em + 0.9vw);
+}
+
+h2 {
+  padding-bottom: 1.5rem;
+}
+
+/* HERO Section */
+.hero {
+  background-color: #1d2730;
+  color: white;
+}
+
+ul.homepage-list li {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 30px;
+  list-style-type: none;
+}
+
+ul.homepage-list li img {
+  margin-right: 5px;
+  width: 20px !important;
+  height: auto;
+}
+
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul.homepage-list li code {
+  font-size: 1rem;
+  color: #d63384;
+  word-wrap: break-word;
+  font-weight: 400;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
+
+body .is-layout-flow > .aligncenter {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* HERO Section End */
