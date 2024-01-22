@@ -61,3 +61,399 @@ body .is-layout-flow > .aligncenter {
   margin-right: auto !important;
 }
 /* HERO Section End */
+
+/* TAB Section */
+.casinos-tabs {
+  width: 100%;
+}
+
+.best-casinos {
+  background-color: #f0f3f7;
+}
+
+.section-header-dark {
+  background: #1d2730;
+  display: flow-root;
+}
+
+.section-tabs-wrapper {
+  border-bottom: 1px solid #dce3e8;
+  height: 71px;
+  position: relative;
+}
+
+cg-tabs-scrollable {
+  /* height: 71px; */
+  /* overflow-x: scroll; */
+  position: relative;
+  white-space: nowrap;
+}
+
+.cg-tabs-main {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-tabs-wrapper .cg-tab-main.active,
+.section-tabs-wrapper .cg-tab-main:hover {
+  background: #f0f3f7;
+}
+
+.section-tabs {
+  padding: 0 12px;
+}
+
+.cg-tabs-scrollable .cg-tab-main {
+  min-width: 130px;
+}
+
+.casinos-tabs label img {
+  height: 28px;
+  width: 28px;
+}
+
+.cg-tab-main {
+  align-items: center;
+  background: #e3e7ef;
+  border-left: 1px solid #cdd6dd;
+  border-top: 1px solid #cdd6dd;
+  color: #4a5b68;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-weight: 700;
+  height: 70px;
+  justify-content: center;
+  max-width: 440px;
+  padding: 0 5px;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.cg-tab-main.active,
+.cg-tab-main:hover {
+  background: #f0f3f7;
+  color: #44be4c;
+}
+
+.cg-tab-main.active {
+  height: 71px;
+}
+
+.cg-tab-main:first-child {
+  border-radius: 2px 0 0 0;
+}
+
+@media (min-width: 1200px) {
+  .section-tabs {
+    max-width: 1320px;
+  }
+  .cg-tabs-main {
+    margin: auto;
+    max-width: 1320px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section-tabs-wrapper {
+    overflow-x: visible;
+  }
+  .section-tabs {
+    margin: auto;
+  }
+  .cg-tabs-scrollable {
+    height: 70px;
+    overflow-x: visible;
+    padding-left: 0;
+  }
+  .cg-tab-main {
+    font-family: neo-sans, sans-serif;
+  }
+}
+
+@media (min-width: 568px) {
+  .cg-tab-main {
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: none;
+  }
+}
+
+/* LOGIC to switch tabs */
+.content-body {
+  display: none;
+}
+.show-active {
+  display: block;
+  /* adding fade-away effect we set bellow */
+  animation: fade 1s;
+}
+/* setting a fade-away effect */
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* LOGIC to switch tabs End */
+/* TAB Section End */
+
+/* TAB CONTENT Section */
+.style5-smg .item-el-a,
+.style5-smg .list-item {
+  display: flex;
+}
+
+.style5-smg .list-item {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 0;
+}
+
+.bookmaker {
+  border-bottom: 1px dotted #999;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+
+.style5-smg .bookmaker {
+  /* -webkit-box-orient: horizontal !important; */
+  /* -webkit-box-direction: normal !important; */
+  border: none;
+  /* -ms-flex-direction: row !important; */
+  flex-direction: row !important;
+}
+
+.style5-smg .item-el-a {
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  /* -webkit-box-pack: center; */
+  /* -ms-flex-pack: center; */
+  border-radius: 15px 0 0 15px;
+  /* -ms-flex-direction: column; */
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  padding: 20px 0 20px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.card_list.show-counter.style5-smg {
+  counter-reset: counter;
+}
+
+.card_list.show-counter.style5-smg .list-counter {
+  counter-increment: counter;
+  display: inline-block;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.card_list.show-counter.style5-smg .list-counter::before {
+  content: counter(counter);
+}
+
+.card_list.style5-smg .list-counter:before {
+  -webkit-box-align: center;
+  /* -ms-flex-align: center; */
+  -webkit-box-pack: center;
+  /* -ms-flex-pack: center; */
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.6);
+  border-radius: 15px 0 15px 0;
+  color: #020316;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  min-width: 35px;
+  padding: 3px;
+  text-align: center;
+}
+
+/* CARD's LOGO Section */
+.style5-smg .list-logo {
+  /* -webkit-box-align: center; */
+  /* -ms-flex-align: center; */
+  /* -webkit-box-pack: center; */
+  /* -ms-flex-pack: center; */
+  align-items: center;
+  /* display: block; */
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.style5-smg .list-logo img {
+  max-width: 100%;
+  max-height: 80px;
+}
+
+@media (min-width: 1025px) {
+  .style5-smg .item-el-a .list-rating,
+  .style5-smg .item-el-a .list-stars,
+  .style5-smg .item-el-a .list-users {
+    display: none;
+  }
+}
+
+.style5-smg .item-el-a .list-rating-nr {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.style5-smg .item-el-a .list-users {
+  color: #fff;
+  font-size: 12px;
+}
+
+.style5-smg .item-el-a .list-stars {
+  max-width: 100px;
+}
+
+.style5-smg .list-skew {
+  left: -35px;
+  margin-left: -30px;
+  min-height: 100%;
+  position: relative;
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+  width: 100px;
+}
+
+@media (min-width: 375px) {
+  .style5-smg .item-el-a {
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .style5-smg .item-el-a {
+    min-width: 240px;
+    width: 240px;
+  }
+}
+
+/* CARD's LOGO Section End */
+
+/* CARD's MIDDLE Section */
+.style5-smg .item-el-b {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .style5-smg .item-el-b {
+    /* -webkit-box-align: center; */
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px 20px 15px 0;
+  }
+}
+
+.style5-smg .item-el-b .list-bonus {
+  -webkit-box-flex: 1;
+  -webkit-box-align: center;
+  /* -ms-flex-align: center; */
+  align-items: center;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+  -ms-flex: 1;
+  flex: 1;
+  font-size: 21px;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+  text-align: center;
+  word-break: break-word;
+}
+
+.style5-smg .item-el-b .list-bonus p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.style5-smg .item-el-b .list-bonus span,
+.style5-smg .item-el-b .list-bonus strong {
+  color: #599e3c;
+  font-size: 25px;
+}
+
+.style5-smg .item-el-b .list-rating,
+.style5-smg .item-el-b .list-rating-nr {
+  -webkit-box-align: center;
+  /* -ms-flex-align: center; */
+  align-items: center;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
+  display: flex;
+}
+
+.style5-smg .item-el-b .list-rating {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  /* -ms-flex-direction: column; */
+  flex-direction: column;
+  gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  .style5-smg .item-el-b .list-rating,
+  .style5-smg .item-el-b .list-rating-nr {
+    display: none !important;
+  }
+}
+
+.style5-smg .item-el-b .list-stars {
+  max-width: 150px;
+}
+
+.style5-smg .item-el-b .list-users {
+  font-size: 14px;
+}
+
+/* NUMBER in the circle */
+.style5-smg .item-el-b .list-rating-nr {
+  -webkit-box-pack: center;
+  /* -ms-flex-pack: center; */
+  border: 1px solid #1c1c1c;
+  border-radius: 50%;
+  font-size: 45px;
+  font-weight: 600;
+  height: 90px;
+  justify-content: center;
+  width: 90px;
+}
+
+.style5-smg .item-el-b a.btn {
+  background-color: #599e3c;
+  border: none;
+  border-radius: 10px !important;
+  padding: 10px;
+  text-transform: capitalize !important;
+  width: 210px;
+}
+
+/* CARD's MIDDLE Section End */
+/* TAB CONTENT Section End */
