@@ -67,7 +67,8 @@ body .is-layout-flow > .aligncenter {
   width: 100%;
 }
 
-.best-casinos {
+.best-casinos,
+container-xxl {
   background-color: #f0f3f7;
 }
 
@@ -568,3 +569,243 @@ figure {
   vertical-align: bottom;
 }
 /* INFO Section End */
+
+/* FOOTER Section */
+footer {
+  background-color: #1d2730;
+  color: #cdd6dd;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wp-container-18.wp-container-18 {
+  justify-content: space-between;
+}
+
+body .is-layout-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body .is-layout-flex > * {
+  margin: 0;
+}
+
+/* SOCIAL Links */
+/* FACEBOOK */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook {
+  background-color: #1778f2;
+  color: #fff;
+}
+
+.wp-block-social-link {
+  border-radius: 9999px;
+  display: block;
+  height: auto;
+  transition: transform 0.1s ease;
+}
+
+.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor,
+.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg,
+.wp-block-social-links
+  .wp-block-social-link
+  .wp-block-social-link-anchor:active,
+.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover,
+.wp-block-social-links
+  .wp-block-social-link
+  .wp-block-social-link-anchor:visited {
+  fill: currentColor;
+  color: currentColor;
+}
+
+.wp-block-social-links .wp-social-link a {
+  padding: 0.3em;
+}
+
+.wp-block-social-links .wp-social-link a,
+.wp-block-social-links .wp-social-link a:hover {
+  border-bottom: 0;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.wp-block-social-link a {
+  align-items: center;
+  display: flex;
+  line-height: 0;
+  transition: transform 0.1s ease;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  word-wrap: normal !important;
+  border: 0;
+  /* -webkit-clip-path: inset(50%); */
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* TWITTER */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter {
+  background-color: #1da1f2;
+  color: #fff;
+}
+
+/* YOUTUBE */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-youtube {
+  background-color: red;
+  color: #fff;
+}
+
+/* INSTAGRAM */
+.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram {
+  background-color: #f00075;
+  color: #fff;
+}
+
+/* NEWSLETTER Section */
+.subscription-form form {
+  margin: auto auto 20px;
+  max-width: 620px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.text-field {
+  /* -ms-flex-preferred-size: 100%; */
+  /* flex-basis: 100%; */
+  width: auto;
+}
+
+@media (min-width: 568px) {
+  .subscription-form form .content {
+    float: left;
+    width: 80%;
+  }
+  .text-field {
+    margin-right: 8px;
+  }
+}
+
+.subscription-form form h5 {
+  color: #a2aeb7;
+  display: block;
+  font-family: Noto Sans, Sans-Serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 16px 0 8px;
+  text-transform: uppercase;
+}
+
+.subscription-form form input[type="email"],
+.subscription-form form input[type="text"] {
+  background: rgba(123, 140, 152, 0.1);
+  border-color: #4a5b68;
+  border-radius: 2px;
+  color: #7b8c98;
+  font-size: 16px;
+  margin: 0;
+  min-height: 50px;
+  padding: 15px;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+/* I am 18 */
+.subscription-form form .wp-block-smg-addon-form-checkbox {
+  margin-top: 15px;
+}
+
+.subscription-form
+  form
+  .wp-block-smg-addon-form-checkbox
+  input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  display: inline-block;
+}
+/* BUTTON */
+@media (min-width: 568px) {
+  .subscription-form form .act-btn {
+    float: right;
+    margin-top: 40px;
+    width: 20%;
+  }
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+@media (min-width: 568px) {
+  .subscription-form form button {
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.subscription-form form button {
+  background: #44be4c;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  /* cursor: pointer; */
+  font-family: neo-sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  /* margin-top: 10px; */
+  padding: 10px 20px;
+  white-space: nowrap;
+  /* width: 100%; */
+}
+/* NEWSLETTER Section End */
+
+.subscription-form form .clear {
+  clear: both;
+}
+
+footer .h5,
+footer h5 {
+  color: #a2aeb7;
+  display: block;
+  font-family: Noto Sans, Sans-Serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 16px 0 8px;
+  text-transform: uppercase;
+}
+
+body .is-layout-constrained > * + * {
+  margin-block-start: 24px;
+  margin-block-end: 0;
+}
+
+/* FOOTER Section End */
