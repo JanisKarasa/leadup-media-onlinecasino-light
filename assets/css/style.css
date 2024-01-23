@@ -579,6 +579,7 @@ footer {
 .footer-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding-inline: 20px;
 }
 
 .wp-container-18.wp-container-18 {
@@ -749,6 +750,23 @@ label {
   display: inline-block;
 }
 /* BUTTON */
+
+.subscription-form form button {
+  background: #44be4c;
+  border: 0;
+  border-radius: 2px;
+  color: #fff;
+  cursor: pointer;
+  font-family: neo-sans, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 54px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  width: 100%;
+}
+
 @media (min-width: 568px) {
   .subscription-form form .act-btn {
     float: right;
