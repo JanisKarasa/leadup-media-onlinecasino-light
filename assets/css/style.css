@@ -12,53 +12,28 @@ h2 {
 }
 
 /* HERO Section */
-.hero {
-  background-color: #1d2730;
-  color: white;
+.nav {
+  height: 6rem;
+  background-color: rgb(33, 37, 41);
+  width: 100%;
 }
 
-ul.homepage-list li {
-  align-items: center;
-  display: flex;
-  justify-content: flex-start;
-  line-height: 30px;
-  list-style-type: none;
+.nav a {
+  font-size: 1.5rem;
+  font-family: "DMSans", sans-serif;
 }
 
-ul.homepage-list li img {
-  margin-right: 5px;
-  width: 20px !important;
-  height: auto;
+.header {
+  padding: 9rem 0 2rem 0;
 }
 
-code {
-  font-size: 0.875em;
-  color: #d63384;
-  word-wrap: break-word;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-    "Courier New", monospace;
-  font-size: 1rem;
-  font-weight: 400;
-  text-transform: uppercase;
+.header h1 {
+  font-family: "Poppins", sans-serif;
 }
 
-ul.homepage-list li code {
-  font-size: 1rem;
-  color: #d63384;
-  word-wrap: break-word;
-  font-weight: 400;
-  margin-left: 5px;
-  text-transform: uppercase;
-}
-
-body .is-layout-flow > .aligncenter {
-  margin-left: auto !important;
-  margin-right: auto !important;
+.header p {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 200;
 }
 /* HERO Section End */
 
@@ -73,7 +48,7 @@ container-xxl {
 }
 
 .section-header-dark {
-  background: #1d2730;
+  background: white;
   display: flow-root;
 }
 
@@ -92,7 +67,7 @@ cg-tabs-scrollable {
 
 .cg-tabs-main {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
 
 .section-tabs-wrapper .cg-tab-main.active,
@@ -118,6 +93,7 @@ cg-tabs-scrollable {
   background: #e3e7ef;
   border-left: 1px solid #cdd6dd;
   border-top: 1px solid #cdd6dd;
+  border-right: 1px solid #cdd6dd;
   color: #4a5b68;
   cursor: pointer;
   display: flex;
@@ -143,8 +119,8 @@ cg-tabs-scrollable {
   height: 71px;
 }
 
-.cg-tab-main:first-child {
-  border-radius: 2px 0 0 0;
+.cg-tab-main {
+  border-radius: 5px 5px 0 0;
 }
 
 @media (min-width: 1200px) {
@@ -204,9 +180,17 @@ cg-tabs-scrollable {
 /* TAB Section End */
 
 /* TAB CONTENT Section */
+.tab-content {
+  border-bottom: 1px solid #cdd6dd;
+}
 .style5-smg .item-el-a,
 .style5-smg .list-item {
   display: flex;
+}
+
+.item-el-a,
+.list-skew {
+  background-color: #8c1818;
 }
 
 .style5-smg .list-item {
@@ -487,113 +471,30 @@ cg-tabs-scrollable {
 /* TAB CONTENT Section End */
 
 /* INFO Section */
-.wp-block-cover,
-.wp-block-cover-image {
-  align-items: center;
-  background-position: 50%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  min-height: 430px;
-  padding: 1em;
-  position: relative;
+.ow-content {
+  background-color: rgb(239 241 244 / 1);
 }
 
-.wp-block-cover
-  .wp-block-cover__background.has-background-dim.has-background-dim-100,
-.wp-block-cover
-  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100,
-.wp-block-cover-image
-  .wp-block-cover__background.has-background-dim.has-background-dim-100,
-.wp-block-cover-image
-  .wp-block-cover__gradient-background.has-background-dim.has-background-dim-100 {
-  opacity: 1;
+.ow-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "DMSans", sans-serif;
 }
 
-.wp-block-cover .wp-block-cover__background,
-.wp-block-cover .wp-block-cover__gradient-background,
-.wp-block-cover-image .wp-block-cover__background,
-.wp-block-cover-image .wp-block-cover__gradient-background,
-.wp-block-cover-image.has-background-dim:not(.has-background-gradient):before,
-.wp-block-cover.has-background-dim:not(.has-background-gradient):before {
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
+.ow-content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
 
-.has-cyan-bluish-gray-background-color {
-  background-color: #abb8c3 !important;
+.ow-content p,
+.ow-content ul {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.wp-block-cover-image.is-light .wp-block-cover__inner-container,
-.wp-block-cover.is-light .wp-block-cover__inner-container {
-  color: #000;
-}
-
-.wp-block-cover .wp-block-cover__inner-container,
-.wp-block-cover-image .wp-block-cover__inner-container {
-  color: #fff;
-  width: 100%;
-  z-index: 1;
-}
-
-.has-white-background-color {
-  background-color: #ffffff !important;
-}
-
-.wp-block-columns {
-  align-items: normal !important;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap !important;
-  margin-bottom: 1.75em;
-}
-
-@media (min-width: 782px) {
-  .wp-block-columns {
-    flex-wrap: nowrap !important;
-  }
-  .wp-block-columns:not(.is-not-stacked-on-mobile)
-    > .wp-block-column[style*="flex-basis"] {
-    flex-grow: 0;
-  }
-}
-
-@media (max-width: 781px) {
-  .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column {
-    flex-basis: 100% !important;
-  }
-}
-
-.wp-block-column.is-vertically-aligned-center {
-  align-self: center;
-}
-
-body .is-layout-flex {
-  gap: 24px;
-}
-
-figure {
-  margin: 0 !important;
-}
-
-.wp-block-image .aligncenter,
-.wp-block-image .alignleft,
-.wp-block-image .alignright,
-.wp-block-image.aligncenter,
-.wp-block-image.alignleft,
-.wp-block-image.alignright {
-  display: table;
-}
-
-.wp-block-image img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: bottom;
+.ow-content p:last-child {
+  margin-bottom: 0;
 }
 /* INFO Section End */
 
@@ -602,256 +503,15 @@ footer {
   background-color: #1d2730;
   color: #cdd6dd;
 }
-
-.footer-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-inline: 20px;
+.footer {
+  background-color: rgb(33, 37, 41);
+  font-family: "Nunito", sans-serif;
+  font-size: 0.8rem;
 }
 
-.wp-container-18.wp-container-18 {
-  justify-content: space-between;
-}
-
-body .is-layout-flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-body .is-layout-flex > * {
-  margin: 0;
-}
-
-/* SOCIAL Links */
-/* FACEBOOK */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-facebook {
-  background-color: #1778f2;
-  color: #fff;
-}
-
-.wp-block-social-link {
-  border-radius: 9999px;
-  display: block;
-  height: auto;
-  transition: transform 0.1s ease;
-}
-
-.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor,
-.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor svg,
-.wp-block-social-links
-  .wp-block-social-link
-  .wp-block-social-link-anchor:active,
-.wp-block-social-links .wp-block-social-link .wp-block-social-link-anchor:hover,
-.wp-block-social-links
-  .wp-block-social-link
-  .wp-block-social-link-anchor:visited {
-  fill: currentColor;
-  color: currentColor;
-}
-
-.wp-block-social-links .wp-social-link a {
-  padding: 0.3em;
-}
-
-.wp-block-social-links .wp-social-link a,
-.wp-block-social-links .wp-social-link a:hover {
-  border-bottom: 0;
-  box-shadow: none;
-  text-decoration: none;
-}
-
-.wp-block-social-link a {
-  align-items: center;
-  display: flex;
-  line-height: 0;
-  transition: transform 0.1s ease;
-}
-
-.screen-reader-text {
-  clip: rect(1px, 1px, 1px, 1px);
-  word-wrap: normal !important;
-  border: 0;
-  /* -webkit-clip-path: inset(50%); */
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-/* TWITTER */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter {
-  background-color: #1da1f2;
-  color: #fff;
-}
-
-/* YOUTUBE */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-youtube {
-  background-color: red;
-  color: #fff;
-}
-
-/* INSTAGRAM */
-.wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram {
-  background-color: #f00075;
-  color: #fff;
-}
-
-/* NEWSLETTER Section */
-.subscription-form form {
-  margin: auto auto 20px;
-  max-width: 620px;
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
-
-.text-field {
-  /* -ms-flex-preferred-size: 100%; */
-  /* flex-basis: 100%; */
-  width: auto;
-}
-
-@media (min-width: 568px) {
-  .subscription-form form .content {
-    float: left;
-    width: 80%;
-  }
-  .text-field {
-    margin-right: 8px;
-  }
-}
-
-.subscription-form form h5 {
-  color: #a2aeb7;
-  display: block;
-  font-family: Noto Sans, Sans-Serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  margin: 16px 0 8px;
-  text-transform: uppercase;
-}
-
-.subscription-form form input[type="email"],
-.subscription-form form input[type="text"] {
-  /* background: rgba(123, 140, 152, 0.1); */
-  border-color: #4a5b68;
-  border-radius: 2px;
-  color: #7b8c98;
-  font-size: 16px;
-  margin: 0;
-  min-height: 50px;
-  padding: 15px;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
-
-/* I am 18 */
-.subscription-form form .wp-block-smg-addon-form-checkbox {
-  margin-top: 15px;
-}
-
-.subscription-form
-  form
-  .wp-block-smg-addon-form-checkbox
-  input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-label {
-  display: inline-block;
-}
-/* BUTTON */
-
-.subscription-form form button {
-  background: #44be4c;
-  border: 0;
-  border-radius: 2px;
-  color: #fff;
-  cursor: pointer;
-  font-family: neo-sans, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  height: 54px;
-  margin-top: 10px;
-  padding: 10px 20px;
-  white-space: nowrap;
-  width: 100%;
-}
-
-@media (min-width: 568px) {
-  .subscription-form form .act-btn {
-    float: right;
-    margin-top: 40px;
-    width: 20%;
-  }
-}
-
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled),
-button:not(:disabled) {
-  cursor: pointer;
-}
-
-@media (min-width: 568px) {
-  .subscription-form form button {
-    margin-top: 0;
-    width: auto;
-  }
-}
-
-.subscription-form form button {
-  background: #44be4c;
-  border: 0;
-  border-radius: 2px;
-  color: #fff;
-  /* cursor: pointer; */
-  font-family: neo-sans, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  height: 54px;
-  /* margin-top: 10px; */
-  padding: 10px 20px;
-  white-space: nowrap;
-  /* width: 100%; */
-}
-/* NEWSLETTER Section End */
-
-.subscription-form form .clear {
-  clear: both;
-}
-
-footer .h5,
-footer h5 {
-  color: #a2aeb7;
-  display: block;
-  font-family: Noto Sans, Sans-Serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 16px;
-  margin: 16px 0 8px;
-  text-transform: uppercase;
-}
-
-body .is-layout-constrained > * + * {
-  margin-block-start: 24px;
-  margin-block-end: 0;
+.footer-license-images img {
+  padding: 5px 8px;
+  max-width: 175px;
 }
 
 /* FOOTER Section End */
